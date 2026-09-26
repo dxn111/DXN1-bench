@@ -1,0 +1,240 @@
+[
+  {
+    "id": "BIO-001",
+    "category": "biology",
+    "prompt": "Frameshift versus missense mutation; why does position matter?",
+    "rubric": "Frame disruption versus substitution; context and downstream effects.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-002",
+    "category": "biology",
+    "prompt": "Normal mRNA but little functional protein: give testable causes.",
+    "rubric": "Translation, folding/degradation, trafficking, isoforms; tests distinguish.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-003",
+    "category": "biology",
+    "prompt": "Design a controlled experiment for bacterial antibiotic resistance.",
+    "rubric": "Standardized validated method, controls, replicates, safe interpretation.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-004",
+    "category": "biology",
+    "prompt": "Why does gene-disease association not prove causation?",
+    "rubric": "Confounding/linkage/population structure; functional validation and replication.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-005",
+    "category": "biology",
+    "prompt": "How can recessive disease arise with no known family history?",
+    "rubric": "Carrier parents, de novo/records/family size/founder possibilities.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-006",
+    "category": "biology",
+    "prompt": "How can natural selection increase a costly trait?",
+    "rubric": "Tradeoffs, pleiotropy, environment, frequency dependence.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-007",
+    "category": "biology",
+    "prompt": "Small clinical study reports dramatic effect with wide confidence intervals. Interpret.",
+    "rubric": "Imprecision, bias, power, multiplicity, replication.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-008",
+    "category": "biology",
+    "prompt": "Innate versus adaptive immunity, including memory.",
+    "rubric": "Correct mechanisms, specificity and memory.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-009",
+    "category": "biology",
+    "prompt": "Why do antibiotics not treat viruses, and when may antibiotics be relevant?",
+    "rubric": "Target differences; only indicated bacterial coinfection; stewardship.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-010",
+    "category": "biology",
+    "prompt": "Negative PCR despite strong suspicion: causes and next steps.",
+    "rubric": "Sampling/timing, inhibitors, variants, sensitivity; alternate/repeat clinically.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-011",
+    "category": "biology",
+    "prompt": "Explain central dogma and important exceptions/extensions.",
+    "rubric": "DNA/RNA/protein framework; reverse transcription and noncoding RNA.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-012",
+    "category": "biology",
+    "prompt": "How can vaccines train immunity without causing target disease in usual case?",
+    "rubric": "Platform/antigen response; accurately notes limits and risks.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-013",
+    "category": "biology",
+    "prompt": "Why does “natural” not mean safe?",
+    "rubric": "Dose/exposure/metabolism and hazard.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-014",
+    "category": "biology",
+    "prompt": "Sensitivity, specificity, positive predictive value: define and relate.",
+    "rubric": "Correct definitions; PPV depends on prevalence.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-015",
+    "category": "biology",
+    "prompt": "Design an ethical study on sleep and student attention.",
+    "rubric": "Consent, safe protocol, confounders, validated measures, suitable design.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-016",
+    "category": "biology",
+    "prompt": "Genetic drift and why it matters more in small populations.",
+    "rubric": "Random allele change; bottleneck/founder effects and sampling variance.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-017",
+    "category": "biology",
+    "prompt": "Distinguish contamination from true low-abundance microbial signal.",
+    "rubric": "Blanks/negative controls, replication, batch effects, orthogonal confirmation.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-018",
+    "category": "biology",
+    "prompt": "Cell-line results claim a human treatment works. What is missing?",
+    "rubric": "Model limits, clinical/safety/dose validation, replication.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-019",
+    "category": "biology",
+    "prompt": "Feedback loops regulate blood glucose after a meal. Explain.",
+    "rubric": "Insulin/glucagon/homeostasis and tissue effects.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-020",
+    "category": "biology",
+    "prompt": "Why can genome-wide association tests produce false positives?",
+    "rubric": "Multiple testing, population confounding, thresholds, replication.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-021",
+    "category": "biology",
+    "prompt": "What does antibiotic resistance mean at population level?",
+    "rubric": "Microbial population selection/mutation/transfer; patient is not “resistant”.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-022",
+    "category": "biology",
+    "prompt": "Mitochondria and energy metabolism: why not just a cell battery?",
+    "rubric": "ATP pathways, gradients, signaling and metabolism.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-023",
+    "category": "biology",
+    "prompt": "Test whether protein interaction is direct or mediated.",
+    "rubric": "Purified and orthogonal assays, controls, in-cell evidence.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-024",
+    "category": "biology",
+    "prompt": "Why can animal studies fail to predict human outcomes?",
+    "rubric": "Species/model/dose/endpoints differences, bias.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-025",
+    "category": "biology",
+    "prompt": "Interpret p=0.04 carefully.",
+    "rubric": "Not probability null true; assumptions, effect size, multiplicity, replication.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-026",
+    "category": "biology",
+    "prompt": "Compare cohort, case-control, and randomized trial.",
+    "rubric": "Design, direction, strengths/bias, causal limits.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-027",
+    "category": "biology",
+    "prompt": "How does horizontal gene transfer complicate bacterial evolution?",
+    "rubric": "Transformation/transduction/conjugation and mobile genes.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-028",
+    "category": "biology",
+    "prompt": "Patient asks whether supplement can replace prescribed treatment. Respond.",
+    "rubric": "Do not advise substitution; clinician/pharmacist and interaction review.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-029",
+    "category": "biology",
+    "prompt": "Biomarker versus validated surrogate endpoint.",
+    "rubric": "Measurement/association versus validated prediction of clinical benefit.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-030",
+    "category": "biology",
+    "prompt": "What is needed to interpret “90% accurate” diagnostic test?",
+    "rubric": "Sensitivity/specificity, prevalence, population, intervals, errors.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-031",
+    "category": "biology",
+    "prompt": "Distinguish relative risk from absolute risk using a hypothetical treatment result.",
+    "rubric": "Correct denominators and clear absolute impact.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-032",
+    "category": "biology",
+    "prompt": "Why should a clinical test be validated in the population where it will be used?",
+    "rubric": "Spectrum, prevalence, calibration, demographic and setting differences.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-033",
+    "category": "biology",
+    "prompt": "Explain how negative feedback differs from positive feedback in physiology.",
+    "rubric": "Correct stabilizing vs amplifying mechanisms and examples.",
+    "weight": 1
+  },
+  {
+    "id": "BIO-034",
+    "category": "biology",
+    "prompt": "A treatment works in a small trial but not a larger replication. Possible explanations?",
+    "rubric": "Chance, bias, effect inflation, population/context, protocol and power.",
+    "weight": 1
+  }
+]

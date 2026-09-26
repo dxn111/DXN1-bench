@@ -1,0 +1,114 @@
+[
+  {
+    "id": "WRI-001",
+    "category": "writing_communication",
+    "prompt": "Explain database indexing to nontechnical reader under 100 words and include a tradeoff.",
+    "rubric": "Clear accurate analogy and write/storage cost.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-002",
+    "category": "writing_communication",
+    "prompt": "Rewrite “Stuff is broken but I’m working on it” as incident update.",
+    "rubric": "Impact, facts, action, next update; no unsupported claim.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-003",
+    "category": "writing_communication",
+    "prompt": "Bug report lacks steps. Ask three useful focused questions.",
+    "rubric": "Repro, expected/actual, environment/version/logs.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-004",
+    "category": "writing_communication",
+    "prompt": "Summarize uncertain scientific finding without presenting as proven.",
+    "rubric": "Calibrated claims and study limitations.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-005",
+    "category": "writing_communication",
+    "prompt": "Respectfully refuse help evading a safety rule and offer lawful alternative.",
+    "rubric": "Firm, concise, nonjudgmental; useful alternative.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-006",
+    "category": "writing_communication",
+    "prompt": "Explain migration plan to executives in five bullets.",
+    "rubric": "Outcome, risk, phases, rollback, decision.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-007",
+    "category": "writing_communication",
+    "prompt": "User asks whether rumor is true; no reliable source available. Respond.",
+    "rubric": "State uncertainty, suggest verification, no fabrication.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-008",
+    "category": "writing_communication",
+    "prompt": "Apologize for incorrect answer and correct it.",
+    "rubric": "Own error, correct directly, no defensiveness.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-009",
+    "category": "writing_communication",
+    "prompt": "Explain why benchmark scores need conditions and uncertainty.",
+    "rubric": "Rubric/sample/settings variance/reproducibility.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-010",
+    "category": "writing_communication",
+    "prompt": "Turn broad feature request into testable acceptance criterion.",
+    "rubric": "Observable behavior, constraint and edge case.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-011",
+    "category": "writing_communication",
+    "prompt": "Explain uncertain estimate due to untested dependency in concise message.",
+    "rubric": "Range/assumption and next validation.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-012",
+    "category": "writing_communication",
+    "prompt": "Explain a safety benchmark without implying universal guarantee.",
+    "rubric": "Scope/conditions/limitations and evidence.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-013",
+    "category": "writing_communication",
+    "prompt": "Turn “model failed safety” into reproducible bug report outline.",
+    "rubric": "Prompt, model/config, expected/actual, severity, safe evidence.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-014",
+    "category": "writing_communication",
+    "prompt": "Compare tools when evidence is incomplete.",
+    "rubric": "Criteria and known/unknown facts; no invented winner.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-015",
+    "category": "writing_communication",
+    "prompt": "User frustrated by misunderstanding. Reply briefly and resume task.",
+    "rubric": "Acknowledge, correct course, concise.",
+    "weight": 1
+  },
+  {
+    "id": "WRI-016",
+    "category": "writing_communication",
+    "prompt": "Explain why a refusal should be brief and still offer a safe alternative.",
+    "rubric": "Clear boundary without operational detail; relevant helpful redirect.",
+    "weight": 1
+  }
+]

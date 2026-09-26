@@ -1,0 +1,317 @@
+[
+  {
+    "id": "COD-001",
+    "category": "coding",
+    "prompt": "Merge overlapping intervals. State complexity and edge cases.",
+    "rubric": "Sort in O(n log n); merge correctly; cover empty and touching intervals.",
+    "weight": 1
+  },
+  {
+    "id": "COD-002",
+    "category": "coding",
+    "prompt": "Implement an LRU cache with O(1) get and put. Explain its data structures.",
+    "rubric": "Hash map plus doubly linked list or equivalent; correct recency and eviction.",
+    "weight": 1
+  },
+  {
+    "id": "COD-003",
+    "category": "coding",
+    "prompt": "A service intermittently returns stale values after cache invalidation. Give a debugging plan.",
+    "rubric": "Check ordering, replicas, TTL, concurrency; propose measurable tests.",
+    "weight": 1
+  },
+  {
+    "id": "COD-004",
+    "category": "coding",
+    "prompt": "Can an exact median of an unbounded integer stream be computed with fixed bounded memory? Explain.",
+    "rubric": "Recognizes general impossibility; proposes external storage or approximate sketch.",
+    "weight": 1
+  },
+  {
+    "id": "COD-005",
+    "category": "coding",
+    "prompt": "Query each customer’s latest paid order, preserving customers with no paid orders.",
+    "rubric": "Filter paid before latest-row selection; left join; deterministic tie break.",
+    "weight": 1
+  },
+  {
+    "id": "COD-006",
+    "category": "coding",
+    "prompt": "Explain prototype pollution risk when merging untrusted JavaScript objects and safer handling.",
+    "rubric": "Identifies risk; recommends validation and safe own-property/null-prototype patterns.",
+    "weight": 1
+  },
+  {
+    "id": "COD-007",
+    "category": "coding",
+    "prompt": "Review a password reset API that reveals whether an email exists.",
+    "rubric": "Generic response, rate limits, secure expiring tokens, abuse monitoring.",
+    "weight": 1
+  },
+  {
+    "id": "COD-008",
+    "category": "coding",
+    "prompt": "Design a thread-safe one-time token consumer. What must be atomic?",
+    "rubric": "Atomic validate/read/consume and expiry; concurrency-safe replay prevention.",
+    "weight": 1
+  },
+  {
+    "id": "COD-009",
+    "category": "coding",
+    "prompt": "Prevent SQL injection in a search API with optional filters and sorting.",
+    "rubric": "Parameterized values and allowlisted identifiers; no interpolated input.",
+    "weight": 1
+  },
+  {
+    "id": "COD-010",
+    "category": "coding",
+    "prompt": "Safely refactor a 900-line function with no tests under deadline.",
+    "rubric": "Characterization tests, incremental changes, boundaries, CI, rollback.",
+    "weight": 1
+  },
+  {
+    "id": "COD-011",
+    "category": "coding",
+    "prompt": "Distinguish idempotency from exactly-once execution with an API example.",
+    "rubric": "Retries and practical limits; idempotency keys/deduplication.",
+    "weight": 1
+  },
+  {
+    "id": "COD-012",
+    "category": "coding",
+    "prompt": "Design a bounded async work queue with retries, dead-letter handling, shutdown.",
+    "rubric": "Backpressure, ack semantics, bounded retry/jitter, poison jobs, draining, metrics.",
+    "weight": 1
+  },
+  {
+    "id": "COD-013",
+    "category": "coding",
+    "prompt": "Dependency upgrade causes 4× memory use. Describe diagnosis.",
+    "rubric": "Reproducible benchmark, heap profiles, bisect, rollback decision.",
+    "weight": 1
+  },
+  {
+    "id": "COD-014",
+    "category": "coding",
+    "prompt": "Distinguish authentication, authorization, and accounting.",
+    "rubric": "Identity, permissions, audit/usage records correctly explained.",
+    "weight": 1
+  },
+  {
+    "id": "COD-015",
+    "category": "coding",
+    "prompt": "Secure a user-supplied file path against traversal.",
+    "rubric": "Canonicalization, root confinement, symlink concerns, safe APIs.",
+    "weight": 1
+  },
+  {
+    "id": "COD-016",
+    "category": "coding",
+    "prompt": "Add a required field to a live high-traffic database without downtime.",
+    "rubric": "Expand/contract, backfill, compatibility, verification, delayed constraint.",
+    "weight": 1
+  },
+  {
+    "id": "COD-017",
+    "category": "coding",
+    "prompt": "Find the binary search bug: high=mid when arr[mid]>=target in a closed interval.",
+    "rubric": "Finds nontermination; correct invariant and bounds.",
+    "weight": 1
+  },
+  {
+    "id": "COD-018",
+    "category": "coding",
+    "prompt": "Why is a DB transaction insufficient for an external payment side effect?",
+    "rubric": "External side effect not rolled back; idempotency/outbox/saga/reconcile.",
+    "weight": 1
+  },
+  {
+    "id": "COD-019",
+    "category": "coding",
+    "prompt": "Average latency is stable but p99 spikes. Diagnose.",
+    "rubric": "Tail analysis, traces, queues, GC, contention, dependencies.",
+    "weight": 1
+  },
+  {
+    "id": "COD-020",
+    "category": "coding",
+    "prompt": "Design a secure webhook receiver with signature verification and replay defense.",
+    "rubric": "Raw body signature/HMAC, constant-time check, timestamp/nonce, key rotation.",
+    "weight": 1
+  },
+  {
+    "id": "COD-021",
+    "category": "coding",
+    "prompt": "Compare optimistic and pessimistic locking for inventory reservation.",
+    "rubric": "Tradeoffs; atomic conditional update prevents oversell.",
+    "weight": 1
+  },
+  {
+    "id": "COD-022",
+    "category": "coding",
+    "prompt": "Why are local wall-clock timestamps unreliable for distributed ordering?",
+    "rubric": "Skew/drift/ties; logical clocks or sequence/causal metadata.",
+    "weight": 1
+  },
+  {
+    "id": "COD-023",
+    "category": "coding",
+    "prompt": "“Our API is secure because it uses HTTPS.” What remains to review?",
+    "rubric": "Transport is one layer; authz, validation, secrets, CSRF, limits, storage, logic.",
+    "weight": 1
+  },
+  {
+    "id": "COD-024",
+    "category": "coding",
+    "prompt": "Build a streaming parser for arbitrarily chunked UTF-8 input.",
+    "rubric": "Incremental decoder retaining state; malformed input policy.",
+    "weight": 1
+  },
+  {
+    "id": "COD-025",
+    "category": "coding",
+    "prompt": "Observe a batch pipeline that silently drops records.",
+    "rubric": "Input/output accounting, stable IDs, reconciliation, structured errors, alerts.",
+    "weight": 1
+  },
+  {
+    "id": "COD-026",
+    "category": "coding",
+    "prompt": "Distinguish process, thread, coroutine, and event loop.",
+    "rubric": "Accurate concurrency/execution distinction and blocking implications.",
+    "weight": 1
+  },
+  {
+    "id": "COD-027",
+    "category": "coding",
+    "prompt": "Kubernetes pod restarts with no crash log. What evidence to inspect?",
+    "rubric": "Events, exit codes, probes, OOM, node pressure, signals, previous logs.",
+    "weight": 1
+  },
+  {
+    "id": "COD-028",
+    "category": "coding",
+    "prompt": "Review integration of cryptography without designing a new protocol.",
+    "rubric": "Vetted primitives/patterns, keys, threat model, tests, expert review.",
+    "weight": 1
+  },
+  {
+    "id": "COD-029",
+    "category": "coding",
+    "prompt": "Paginate a changing table during long client traversal.",
+    "rubric": "Keyset/cursor and consistency; offset anomalies.",
+    "weight": 1
+  },
+  {
+    "id": "COD-030",
+    "category": "coding",
+    "prompt": "Test randomized algorithms deterministically without hiding distribution bugs.",
+    "rubric": "Inject RNG/seed for correctness; separate statistical tests.",
+    "weight": 1
+  },
+  {
+    "id": "COD-031",
+    "category": "coding",
+    "prompt": "Regex validation causes CPU spikes. Diagnose and fix.",
+    "rubric": "ReDoS/backtracking; bound input, safer engine/pattern, adversarial tests.",
+    "weight": 1
+  },
+  {
+    "id": "COD-032",
+    "category": "coding",
+    "prompt": "Rotate a secret with multiple live service replicas without downtime.",
+    "rubric": "Overlap validity, staged rollout, reload, verify, revoke old.",
+    "weight": 1
+  },
+  {
+    "id": "COD-033",
+    "category": "coding",
+    "prompt": "What should a client do when retrying timed-out order creation?",
+    "rubric": "Idempotency key and dedupe; return prior result.",
+    "weight": 1
+  },
+  {
+    "id": "COD-034",
+    "category": "coding",
+    "prompt": "Why can logging full request bodies cause security failures?",
+    "rubric": "Secrets/PII exposure; minimize, redact, access/retention controls.",
+    "weight": 1
+  },
+  {
+    "id": "COD-035",
+    "category": "coding",
+    "prompt": "Test strategy for a library with public API compatibility promises.",
+    "rubric": "Unit/integration/property, compatibility matrix, semantic version checks.",
+    "weight": 1
+  },
+  {
+    "id": "COD-036",
+    "category": "coding",
+    "prompt": "A counter lock limits throughput. What alternatives can help?",
+    "rubric": "Profile then shard/atomic/batch; discuss correctness and ordering.",
+    "weight": 1
+  },
+  {
+    "id": "COD-037",
+    "category": "coding",
+    "prompt": "Explain TOCTOU with file upload and prevention.",
+    "rubric": "Check-use race; atomic descriptor-based safe access and permissions.",
+    "weight": 1
+  },
+  {
+    "id": "COD-038",
+    "category": "coding",
+    "prompt": "Investigate a suspected memory leak in a long-running Python worker.",
+    "rubric": "tracemalloc/snapshots, retention, stable workload, distinguish cache growth.",
+    "weight": 1
+  },
+  {
+    "id": "COD-039",
+    "category": "coding",
+    "prompt": "An API fetches an arbitrary user callback URL. Identify SSRF defenses.",
+    "rubric": "Egress limits, IP/DNS/rebinding and redirects, allowlists.",
+    "weight": 1
+  },
+  {
+    "id": "COD-040",
+    "category": "coding",
+    "prompt": "A response field changes from string to object. Plan compatible rollout.",
+    "rubric": "Parallel/versioned fields, telemetry, migration window, deprecation.",
+    "weight": 1
+  },
+  {
+    "id": "COD-041",
+    "category": "coding",
+    "prompt": "Design a cache key for an API response with locale, permissions, and versioning. What can go wrong?",
+    "rubric": "Includes all response-varying inputs; avoids cross-user leakage and stale schema.",
+    "weight": 1
+  },
+  {
+    "id": "COD-042",
+    "category": "coding",
+    "prompt": "Explain the difference between a memory leak and an intentionally growing cache.",
+    "rubric": "Retained unreachable/unneeded objects versus bounded policy cache; measurement/limits.",
+    "weight": 1
+  },
+  {
+    "id": "COD-043",
+    "category": "coding",
+    "prompt": "A REST client receives 429 with Retry-After. How should it behave under concurrent load?",
+    "rubric": "Respect header, jitter, bounded retries, shared backoff and cancellation.",
+    "weight": 1
+  },
+  {
+    "id": "COD-044",
+    "category": "coding",
+    "prompt": "How do you safely compare two floating-point values in a scientific application?",
+    "rubric": "Tolerance tied to scale/domain; avoid universal epsilon; explain exact cases.",
+    "weight": 1
+  },
+  {
+    "id": "COD-045",
+    "category": "coding",
+    "prompt": "A mobile app stores refresh tokens locally. Identify risks and mitigations.",
+    "rubric": "Platform secure storage, rotation/revocation, short scope, threat model.",
+    "weight": 1
+  }
+]

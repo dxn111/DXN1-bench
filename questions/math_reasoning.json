@@ -1,0 +1,156 @@
+[
+  {
+    "id": "MAT-001",
+    "category": "math_reasoning",
+    "prompt": "Fair coin lands heads ten times. Probability next flip heads?",
+    "rubric": "1/2 under independence.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-002",
+    "category": "math_reasoning",
+    "prompt": "Disease prevalence 1%, test sensitivity 99%, specificity 95%. Approx PPV?",
+    "rubric": "About 16.7% via Bayes (assumptions stated).",
+    "weight": 1
+  },
+  {
+    "id": "MAT-003",
+    "category": "math_reasoning",
+    "prompt": "Price rises 20% then falls 20%. Net change?",
+    "rubric": "-4%.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-004",
+    "category": "math_reasoning",
+    "prompt": "5 machines make 5 widgets in 5 minutes. How long for 100 machines to make 100?",
+    "rubric": "5 minutes at equal independent rate.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-005",
+    "category": "math_reasoning",
+    "prompt": "Bat and ball cost $1.10; bat costs $1 more. Ball price?",
+    "rubric": "$0.05.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-006",
+    "category": "math_reasoning",
+    "prompt": "Sequence 2,6,12,20,30: plausible next term and ambiguity?",
+    "rubric": "42 by n(n+1); finite sequence allows other rules.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-007",
+    "category": "math_reasoning",
+    "prompt": "Urn 3 red, 2 blue; draw 2 without replacement. Both red probability?",
+    "rubric": "3/10.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-008",
+    "category": "math_reasoning",
+    "prompt": "Average over 4 games is 80; next score is 100. New average?",
+    "rubric": "84.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-009",
+    "category": "math_reasoning",
+    "prompt": "Solve 3x+7=2x-5.",
+    "rubric": "x=-12.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-010",
+    "category": "math_reasoning",
+    "prompt": "60 km at 30 km/h out, 60 km at 60 km/h back. Average speed?",
+    "rubric": "40 km/h.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-011",
+    "category": "math_reasoning",
+    "prompt": "All glips are blors; no blors are trens. Can glip be tren?",
+    "rubric": "No.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-012",
+    "category": "math_reasoning",
+    "prompt": "Two fair dice: probability sum is 7?",
+    "rubric": "1/6.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-013",
+    "category": "math_reasoning",
+    "prompt": "Value doubles every 3h; starts 5. Value after 12h?",
+    "rubric": "80.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-014",
+    "category": "math_reasoning",
+    "prompt": "Rectangle perimeter 30m; integer sides. Distinct unordered dimensions?",
+    "rubric": "7 pairs 1×14 through 7×8.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-015",
+    "category": "math_reasoning",
+    "prompt": "Workers complete 1/3 and 1/6 task per hour. Together duration?",
+    "rubric": "2h.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-016",
+    "category": "math_reasoning",
+    "prompt": "Independent events probabilities .2 and .3. Both?",
+    "rubric": ".06.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-017",
+    "category": "math_reasoning",
+    "prompt": "8 successes in 10 trials: why is 80% uncertain?",
+    "rubric": "Small sample; interval/sampling process.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-018",
+    "category": "math_reasoning",
+    "prompt": "Train 9am 80km/h; another 10am 100km/h same direction. Catch-up time?",
+    "rubric": "2pm.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-019",
+    "category": "math_reasoning",
+    "prompt": "Median of 3,9,2,12,7,5?",
+    "rubric": "6.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-020",
+    "category": "math_reasoning",
+    "prompt": "Square area increases 44%; side length increase?",
+    "rubric": "20%.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-021",
+    "category": "math_reasoning",
+    "prompt": "A 2% event occurs in 1,000 people. Expected count and uncertainty?",
+    "rubric": "20 expected; actual count varies; assumptions/binomial variance.",
+    "weight": 1
+  },
+  {
+    "id": "MAT-022",
+    "category": "math_reasoning",
+    "prompt": "A number is increased by 50% then decreased by 50%. Net change?",
+    "rubric": "25% decrease.",
+    "weight": 1
+  }
+]

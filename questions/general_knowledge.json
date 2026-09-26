@@ -1,0 +1,107 @@
+[
+  {
+    "id": "GEN-001",
+    "category": "general_knowledge",
+    "prompt": "Explain greenhouse effect versus ozone depletion.",
+    "rubric": "Correct distinct mechanisms.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-002",
+    "category": "general_knowledge",
+    "prompt": "Why leap years, and why not simply every four years?",
+    "rubric": "Tropical year; century/400 exceptions.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-003",
+    "category": "general_knowledge",
+    "prompt": "Inflation versus one product’s price rise.",
+    "rubric": "General price level versus relative price movement.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-004",
+    "category": "general_knowledge",
+    "prompt": "“Map is not territory” in data modeling.",
+    "rubric": "Model is selective; assumptions and omissions matter.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-005",
+    "category": "general_knowledge",
+    "prompt": "Vaccines versus antibiotics in purpose.",
+    "rubric": "Prevention/immune training versus bacterial treatment.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-006",
+    "category": "general_knowledge",
+    "prompt": "Weather versus climate.",
+    "rubric": "Short-term conditions versus long-term statistics.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-007",
+    "category": "general_knowledge",
+    "prompt": "What does central-bank rate increase aim to do and tradeoffs?",
+    "rubric": "Demand/inflation moderation; borrowing/growth/employment tradeoffs and lag.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-008",
+    "category": "general_knowledge",
+    "prompt": "Why compare primary and secondary historical sources?",
+    "rubric": "Proximity, interpretation, bias, context, corroboration.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-009",
+    "category": "general_knowledge",
+    "prompt": "Carbon footprint and why product comparisons are difficult.",
+    "rubric": "Lifecycle boundaries, usage, assumptions, uncertainty.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-010",
+    "category": "general_knowledge",
+    "prompt": "Why check expert claims against evidence and consensus?",
+    "rubric": "Authority not proof; quality, conflicts, replication.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-011",
+    "category": "general_knowledge",
+    "prompt": "Why can averages hide income inequality? Name companion statistic.",
+    "rubric": "Skew/outliers; median/quantiles/distribution.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-012",
+    "category": "general_knowledge",
+    "prompt": "What is placebo effect and why blind trials?",
+    "rubric": "Expectancy/context; reduce performance/measurement bias.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-013",
+    "category": "general_knowledge",
+    "prompt": "Renewable energy versus zero-impact energy.",
+    "rubric": "Renewability differs from lifecycle impact.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-014",
+    "category": "general_knowledge",
+    "prompt": "How can a technically true headline mislead?",
+    "rubric": "Selection, missing baseline/uncertainty, causal framing.",
+    "weight": 1
+  },
+  {
+    "id": "GEN-015",
+    "category": "general_knowledge",
+    "prompt": "What peer review helps with and does not guarantee?",
+    "rubric": "Critical filter, not truth/reproducibility/bias-free.",
+    "weight": 1
+  }
+]
