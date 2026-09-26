@@ -1,26 +1,29 @@
 from __future__ import annotations
-import argparse, json, os, sys
+import argparse, json
 from pathlib import Path
-from .core import load_questions, run, score_record
+from .core import DEFAULT_MODEL, load_questions, prepare, rate_record, verify_questions
 
 def main():
-    parser=argparse.ArgumentParser(prog='dxn1-bench',description='Run and score DXN1-bench')
+    parser=argparse.ArgumentParser(prog='dxn1-bench',description='AI self-benchmark with Kilo free rubric ratings')
     sub=parser.add_subparsers(dest='cmd',required=True)
-    q=sub.add_parser('questions',help='print benchmark question count and categories')
-    r=sub.add_parser('run',help='run against an OpenAI-compatible chat endpoint')
-    r.add_argument('--model',required=True); r.add_argument('--base-url',default=os.getenv('DXN1_BASE_URL','https://api.openai.com/v1'))
-    r.add_argument('--api-key',default=os.getenv('DXN1_API_KEY')); r.add_argument('--output',default='results/run.json'); r.add_argument('--limit',type=int)
-    s=sub.add_parser('score',help='score a saved run using the transparent baseline')
-    s.add_argument('run_file'); s.add_argument('--output',default='results/report.json')
+    sub.add_parser('questions',help='print question count and categories')
+    p=sub.add_parser('prepare',help='create a response file for the AI respondent')
+    p.add_argument('--output',default='results/run.json'); p.add_argument('--limit',type=int)
+    v=sub.add_parser('verify',help='ask Kilo to verify the question bank using bounded web search')
+    v.add_argument('--model',default=DEFAULT_MODEL); v.add_argument('--output',default='results/question-verification.json')
+    r=sub.add_parser('rate',help='ask Kilo Auto Free to score respondent answers against rubrics')
+    r.add_argument('run_file'); r.add_argument('--model',default=DEFAULT_MODEL); r.add_argument('--output',default='results/report.json'); r.add_argument('--verification',default='results/question-verification.json')
     a=parser.parse_args()
     if a.cmd=='questions':
-        qs=load_questions(); print(f"Questions: {len(qs)}")
-        for cat in sorted(set(x['category'] for x in qs)): print(f"{cat}: {sum(x['category']==cat for x in qs)}")
-    elif a.cmd=='run':
-        if not a.api_key: parser.error('Provide --api-key or set DXN1_API_KEY')
-        rec=run(a.model,a.base_url,a.api_key,Path(a.output),a.limit); print(f"Saved {len(rec['results'])} responses to {a.output}")
+        qs=load_questions(); print(f'Questions: {len(qs)}')
+        for cat in sorted(set(x['category'] for x in qs)): print(f'{cat}: {sum(x["category"]==cat for x in qs)}')
+    elif a.cmd=='prepare':
+        rec=prepare(Path(a.output),a.limit); print(f"Prepared {len(rec['results'])} questions at {a.output}; the AI respondent must fill each response independently.")
+    elif a.cmd=='verify':
+        rep=verify_questions(Path(a.output),a.model); print(json.dumps(rep['summary'],indent=2)); print(f'Saved verification to {a.output}')
     else:
-        record=json.loads(Path(a.run_file).read_text(encoding='utf-8'))
-        report=score_record(record,Path(a.output))
-        print(json.dumps({"model":report['model'],"overall_percent":report['overall_percent'],"categories":report['categories'],"safety_flags_for_review":report['safety_flags_for_review']},indent=2))
+        rec=json.loads(Path(a.run_file).read_text(encoding='utf-8'))
+        verpath=Path(a.verification); verification=json.loads(verpath.read_text(encoding='utf-8')) if verpath.exists() else None
+        rep=rate_record(rec,Path(a.output),a.model,verification)
+        print(json.dumps({k:rep[k] for k in ('respondent','judge_resolved_models','overall_percent','categories','safety_flags_for_review','completed','total_questions','rating_failures','question_verification_summary')},indent=2))
 if __name__=='__main__': main()
